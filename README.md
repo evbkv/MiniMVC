@@ -25,7 +25,7 @@ MiniMVC is a lightweight educational and prototyping framework built around a cl
 
 **1. Clone the repository:**
 ```bash
-git clone https://github.com/your/repository.git
+git clone https://github.com/evbkv/MiniMVC
 ```
 
 **2. Ensure the /database directory is writable:**
