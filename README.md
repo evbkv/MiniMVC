@@ -23,34 +23,34 @@ MiniMVC is a lightweight educational and prototyping framework built around a cl
 
 ### Steps
 
-1. Clone the repository:
+**1. Clone the repository:**
 ```bash
 git clone https://github.com/your/repository.git
 ```
 
-2. Ensure the /database directory is writable:
+**2. Ensure the /database directory is writable:**
 ```bash
 chmod 775 database
 ```
 
-3. Point your server’s document root to:
+**3. Point your server’s document root to:**
 ```
 /public
 ```
 
-4. Open in browser:
+**4. Open in browser:**
 ```
 http://yourhost/setup.php
 ```
 
-5. Complete the setup wizard:
+**5. Complete the setup wizard:**
 * Create the SQLite database
 * Create the first admin user
 * Auto-login will redirect to the home page
 
 ### Configuration
 
-1. Database Structure
+**1. Database Structure**
 Database creation and migration logic lives in:
 ```bash
 database/migration.php
@@ -70,7 +70,7 @@ To add your own tables:
 * Run migrations (allowed in development mode)
 * Or manually execute SQL scripts
 
-2. Creating Models
+**2. Creating Models**
 Models extend the base Model class:
 ```php
 class Article extends Model {
@@ -90,7 +90,7 @@ Available model methods:
 * Model::update($id, [...])
 * Model::delete($id)
 
-3. Creating Controllers
+**3. Creating Controllers**
 Controllers extend Controller:
 ```php
 class ArticleController extends Controller {
@@ -107,7 +107,7 @@ Features:
 * Permission checks ($this->checkAuth('permission'))
 * Access to request params
 
-4. Creating Views
+**4. Creating Views**
 Views are simple PHP files in:
 ```
 app/Views/
@@ -123,7 +123,7 @@ Auto-available view variables:
 * $params
 * Data passed from controller
 
-5. Adding Routes
+**5. Adding Routes**
 Routes are defined in:
 ```
 config/routes.php
@@ -136,7 +136,7 @@ return [
 ];
 ```
 
-6. Roles & Permissions
+**6. Roles & Permissions**
 Roles are defined in config/app.php:
 ```php
 define('ROLE_ADMIN', 'admin');
