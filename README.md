@@ -166,10 +166,6 @@ $this->checkAuth('create_article');
 * Optional template engine (lightweight)
 * Modular architecture / plugin system
 
-## Screenshot
-
-![Screenshot](screenshot.png)
-
 ## Author
 
 [Evgenii Bykov](https://github.com/evbkv)
