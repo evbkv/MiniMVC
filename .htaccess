@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+Options -Indexes
+
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "\.(sql|log|env|ini|bak)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+RedirectMatch 403 ^/app/.*$
+RedirectMatch 403 ^/config/.*$
+RedirectMatch 403 ^/database/.*$
